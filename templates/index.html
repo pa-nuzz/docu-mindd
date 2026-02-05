@@ -1,25 +1,12 @@
 <!DOCTYPE html>
-
-<html lang="">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Docu-Mind Upload</title>
-</head>
-<body>
-    <h2>Upload PDF or DOCX</h2>
-    <form action="/upload/file" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".pdf,.docx" required>
-        <button type="submit">Upload</button>
-    </form>
-
-    <script>
-        // Change background colors
-        document.body.style.backgroundColor = "#e0f7fa"; // light cyan
-
-        // Change heading color
-        document.querySelector("h2").style.color = "#00796b"; // teal
-
-
-    </script>
-</body>
-</html>
-
+    <style>
+        /* Reset default margin/padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
