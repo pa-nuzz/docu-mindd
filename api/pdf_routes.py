@@ -48,14 +48,6 @@ async def upload_file(file: UploadFile = File(...)):
         raw_text = "\n".join(para.text for para in doc.paragraphs)
         page_count = len(doc.paragraphs)
 
-    # OCR fallback if text is empty
-    if not raw_text.strip():
-        raw_text = extract_text_with_ocr(content)
-
-    if not raw_text.strip():
-        raise HTTPException(status_code=422, detail="No readable text found")
-
-    # Clean the text
     cleaned_text = clean_text(raw_text)
 
     return {
