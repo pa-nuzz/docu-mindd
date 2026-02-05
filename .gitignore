@@ -1,0 +1,47 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment files
+*.env
+.venv/
+.env.*
+
+# =====================
+# IDE / Editor
+# =====================
+# VSCode
+.vscode/
+# PyCharm / IntelliJ
+.idea/
+
+# =====================
+# System files
+# =====================
+# macOS
+.DS_Store
+
+# =====================
+# Databases / Logs
+# =====================
+*.db
+*.log
+
+# =====================
+# Build / Distribution / Temporary
+# =====================
+build/
+dist/
+*.egg-info/
+
+# =====================
+# Project-specific
+# =====================
+# Ignore uploaded files folder
+uploads/
+
+
